@@ -16,7 +16,7 @@ const mensagem  = document.querySelector('.mensagem')
 const conjImagens = ['imagens/água.jpg', 'imagens/régua.jpg', 'imagens/bigode.png']
 const conjPalavras = ['Á___A', 'RÉ___A', 'BI___ODE']
 const conjRespostas = [['G', 'GU']]
-
+const conjPalavrasCompletas = ['ÁGUA', 'RÉGUA', 'BIGODE']
 
 imagem.src = conjImagens[i]
 palavra.textContent = conjPalavras[i]
@@ -40,22 +40,32 @@ switch (i) {
     case 0:
         if (this.textContent == 'GU') {
             mensagem.textContent = 'Parabéns, você acertou!'
+            palavra.textContent = conjPalavrasCompletas[i]
         } else {
             mensagem.textContent = 'Tente novamente!'
+            palavra.textContent = conjPalavras[i]
         }
         break;
     case 1:
         if (this.textContent == 'GU') {
             mensagem.textContent = 'Parabéns, você acertou!'
+            palavra.textContent = conjPalavrasCompletas[i]
+
         } else {
             mensagem.textContent = 'Tente novamente!'
+            palavra.textContent = conjPalavras[i]
+
         }
         break;
     case 2:
         if (this.textContent == 'G') {
             mensagem.textContent = 'Parabéns, você acertou!'
+            palavra.textContent = conjPalavrasCompletas[i]
+
         } else {
             mensagem.textContent = 'Tente novamente!'
+            palavra.textContent = conjPalavras[i]
+
         }
         break;
     default:
